@@ -169,6 +169,12 @@ function is_no_superfluous_whitespace($csv_data)
  * 		Associative array respresenting the rows/columns of the given CSV file,
  * 		each row is represented by an associative array with column names as 
  * 		keys mapped to the corresponding value.
+ * $anchor_column_name:
+ * 		(string) the base column name value to compare to 
+ * 		$comparison_column_name values.
+ * $comparison_column_name:
+ * 		(string) the column name value of which duplicate values are detected
+ *  	        when compared to the $anchor_column_name value.
  * 
  * return
  * 		Log object detailing results
